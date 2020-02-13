@@ -4,7 +4,7 @@ import store from "../store.js";
 
 // @ts-ignore
 let _api = axios.create({
-  baseURL: "https://api.nasa.gov/planetary/apod?api_key=tkyPoarXbfFbjhdzhPquVLBfIYq0SXRyYiMsGC3S",
+  baseURL: "//api.nasa.gov/planetary/apod?api_key=tkyPoarXbfFbjhdzhPquVLBfIYq0SXRyYiMsGC3S",
   timeout: 3000
 });
 
