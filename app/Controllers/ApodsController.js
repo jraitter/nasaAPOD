@@ -18,4 +18,7 @@ export default class ApodsController {
     console.log("ApodsController entering getAPOD()");
     ApodsService.getAPOD();
   }
+  getRandomApod() {
+    ApodsService.getRandomApod();
+  }
 }

@@ -14,20 +14,23 @@
 </head>
 
 <body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col bg-secondary text-white d-flex justify-content-around">
+                <h1>Nasa Images</h1>
+                <button type="button" class="btn btn-secondary" onclick="app.apodsController.getAPOD()">Get
+                    APOD</button>
+                <button type="button" class="btn btn-secondary" onclick="app.apodsController.getRandomApod()">Get
+                    Random APOD</button>
+            </div>
+        </div>
+    </header>
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-3">
-                <button type="button" class="btn btn-primary btn-lg" onclick="app.apodsController.getAPOD()">Get
-                    APOD</button>
+            <div class="col" id="current-data">
             </div>
         </div>
-        <div class="col-6">
-            <div class="row">
-                <div class="col" id="current-data">
-                </div>
-            </div>
-        </div>
-        <div class="col-3"></div>
     </div>
 
 
