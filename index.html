@@ -14,14 +14,22 @@
 </head>
 
 <body>
-    <header class="container-fluid">
+    <header class="container-fluid fixed-top">
         <div class="row">
             <div class="col bg-secondary text-white d-flex justify-content-around">
                 <h1>Nasa Images</h1>
-                <button type="button" class="btn btn-secondary" onclick="app.apodsController.getAPOD()">Get
-                    APOD</button>
+                <!-- <button type="button" class="btn btn-secondary" onclick="app.apodsController.getAPOD()">Get
+                    APOD</button> -->
                 <button type="button" class="btn btn-secondary" onclick="app.apodsController.getRandomApod()">Get
                     Random APOD</button>
+                <form onsubmit="app.apodsController.getSearchApod(event)" class="form-inline">
+                    <div class="form-group">
+                        <label for="query"></label>
+                        <input name="query" type="text" class="form-control" id="query"
+                            placeholder="Date: YYYY-MM-DD" />
+                        <button type="submit" class="btn btn-success">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
     </header>

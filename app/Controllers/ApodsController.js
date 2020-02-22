@@ -12,7 +12,7 @@ export default class ApodsController {
   constructor() {
     console.log("ApodsController constructor loaded");
     store.subscribe("apod", _draw);
-
+    this.getAPOD();
   }
   getAPOD() {
     console.log("ApodsController entering getAPOD()");
@@ -20,5 +20,10 @@ export default class ApodsController {
   }
   getRandomApod() {
     ApodsService.getRandomApod();
+  }
+  getSearchApods(event) {
+    event.preventDefault();
+    let formData = event.target;
+    ApodsService.getApodByQuery(formData.query.value)
   }
 }

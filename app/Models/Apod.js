@@ -13,7 +13,7 @@ export default class Apod {
 <div class="card">
   <img src="${this.url}" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">${this.title}</h5>
+    <h5 class="card-title">${this.title} -- ${this.date}</h5>
     <p class="card-text">${this.explanation}</p>
   </div>
 </div>

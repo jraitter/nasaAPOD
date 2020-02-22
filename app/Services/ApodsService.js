@@ -37,6 +37,9 @@ class ApodsService {
         console.error(error);
       });
   }
+  getApodByQuery(query) {
+
+  }
 }
 
 function randomDate() {
